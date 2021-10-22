@@ -58,16 +58,34 @@ for k in mul:
    print(k)
 print("\n")
 
-Matrix Size :
-Enter Number of Rows : 2
-Enter Number of Columns  : 2
+# Transpose of M1 and M2
+print("New Matrix showing Transpose of M1")
+trans1=[[0 for i in range (c)]for j in range (r)]
+for i in range (len(m1)):
+  for j in range (len(m1[0])):
+    trans1[j][i]=m1[i][j]
+for k in trans1:
+  print(k)
+print("\n")
+
+print("New Matrix showing Transpose of M2")
+trans2=[[0 for i in range (c)]for j in range (r)]
+for i in range (len(m2)):
+  for j in range (len(m2[0])):
+    trans2[i][j]=m2[j][i]
+for k in trans2:
+  print(k)
+print("\n")
 
 
 
+#Output
 
 
+#Matrix Size :
+#Enter Number of Rows : 2
+#Enter Number of Columns  : 2
 
-#OutPut
 
 #Matrix 1 Elements
 #Enter Elements : 3
@@ -103,3 +121,13 @@ Enter Number of Columns  : 2
 
 #[10, 5]
 #[10, 5]
+
+
+#New Matrix showing Transpose of M1
+#[3, 3]
+#[2, 2]
+
+
+#New Matrix showing Transpose of M2
+#[2, 2]
+#[1, 1]
